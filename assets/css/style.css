@@ -1,0 +1,338 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #35424a;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #e8491d;
+}
+
+.user-info {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Formularios */
+.login-container, 
+.register-container,
+.install-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.login-container h1,
+.register-container h1,
+.install-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #35424a;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e8491d;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(232, 73, 29, 0.2);
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.error {
+    color: #e8491d;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #35424a;
+}
+
+.btn-primary {
+    background: #e8491d;
+}
+
+.btn-primary:hover {
+    background: #d1401a;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-edit {
+    background: #28a745;
+}
+
+.btn-edit:hover {
+    background: #218838;
+}
+
+.btn-delete {
+    background: #dc3545;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+/* Alertas */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Tablas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #35424a;
+    color: white;
+}
+
+.data-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+}
+
+/* Estadísticas */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e8491d;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #35424a 0%, #e8491d 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Features */
+.features {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature h3 {
+    color: #35424a;
+    margin-bottom: 15px;
+}
+
+/* Enlaces */
+a {
+    color: #e8491d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #35424a;
+    text-decoration: underline;
+}
+
+.register-link,
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+    }
+    
+    .main-nav {
+        margin-top: 20px;
+    }
+    
+    .stats-container,
+    .features .container {
+        flex-direction: column;
+    }
+    
+    .stat-card,
+    .feature {
+        margin: 10px 0;
+    }
+}

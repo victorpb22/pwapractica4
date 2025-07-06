@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Redirigir a HTTP (opcional)
+# RewriteCond %{HTTP} off
+# RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Eliminar .php de las URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Evitar listado de directorios
+Options -Indexes
