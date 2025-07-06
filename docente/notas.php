@@ -122,6 +122,5 @@ $lugares = $db->executeQuery("SELECT id, nombre FROM lugares")->get_result()->fe
         </form>
     </div>
     
-    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

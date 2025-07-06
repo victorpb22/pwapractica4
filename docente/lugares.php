@@ -123,6 +123,5 @@ $lugares = $db->executeQuery("SELECT * FROM lugares ORDER BY nombre")->get_resul
         </div>
     </div>
     
-    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

@@ -134,6 +134,5 @@ $estudiantes = $db->executeQuery("SELECT id, nombre, apellidos, email FROM usuar
         </div>
     </div>
     
-    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

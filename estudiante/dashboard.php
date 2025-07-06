@@ -100,6 +100,5 @@ $ultimas_notas = $db->executeQuery(
         </div>
     </div>
     
-    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

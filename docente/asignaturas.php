@@ -123,6 +123,5 @@ $asignaturas = $db->executeQuery("SELECT * FROM asignaturas ORDER BY nombre")->g
         </div>
     </div>
     
-    <?php include '../includes/footer.php'; ?>
 </body>
 </html>
